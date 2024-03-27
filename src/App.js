@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Categories from './Categories';
-
+import items from "./data"
 
 function App() {
   return (
