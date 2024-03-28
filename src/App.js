@@ -8,11 +8,15 @@ const allCategories = ["all",...new Set(items.map(item=> item.category))];
 function App() {
   const [menuItems,setMenuItems] = useState(items)
   const [activeCategory,setActiveCategory] = useState("")
-  const [category,setcCategory] = useState()
+  const [category,setcCategory] = useState(allCategories)
   return (
-    <div className="App">
-     
-    </div>
+    <main>
+     <section className='holiday section'>
+      <div className='title'>
+
+      </div>
+     </section>
+    </main>
   );
 }
 
