@@ -13,7 +13,8 @@ function App() {
     <main>
      <section className='holiday section'>
       <div className='title'>
-
+         <h2>Çukurova Swimming Places</h2>
+         <div className='underline'></div>
       </div>
      </section>
     </main>
