@@ -14,7 +14,9 @@ function App() {
      <section className='holiday section'>
       <div className='title'>
          <h2>Çukurova Swimming Places</h2>
-         <div className='underline'></div>
+         <div className='underline'>
+          Gezilecek yerler
+         </div>
       </div>
      </section>
     </main>
