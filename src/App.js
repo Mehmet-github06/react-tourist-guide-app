@@ -9,6 +9,15 @@ function App() {
   const [menuItems,setMenuItems] = useState(items)
   const [activeCategory,setActiveCategory] = useState("")
   const [categories,setcCategory] = useState(allCategories)
+
+const filterItems= (category)=>{
+  setActiveCategory(category)
+  if(category === "all"){
+    setMenuItems(items);
+    return;
+  }
+}
+
   return (
     <main>
      <section className='holiday section'>
@@ -16,7 +25,7 @@ function App() {
          <h2>Çukurova Swimming Places</h2>
          <div className='underline'></div>
       </div>
-      <Categories categories={categories} activeCategory={activeCategory} filterItems={} />
+      <Categories categories={categories} activeCategory={activeCategory} filterItems={filterItems} />
      </section>
     </main>
   );
