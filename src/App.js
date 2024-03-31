@@ -8,16 +8,15 @@ const allCategories = ["all",...new Set(items.map(item=> item.category))];
 function App() {
   const [menuItems,setMenuItems] = useState(items)
   const [activeCategory,setActiveCategory] = useState("")
-  const [category,setcCategory] = useState(allCategories)
+  const [categories,setcCategory] = useState(allCategories)
   return (
     <main>
      <section className='holiday section'>
       <div className='title'>
          <h2>Çukurova Swimming Places</h2>
-         <div className='underline'>
-          Gezilecek yerler
-         </div>
+         <div className='underline'></div>
       </div>
+      <Categories categories={categories} activeCategory={activeCategory} filterItems={} />
      </section>
     </main>
   );
