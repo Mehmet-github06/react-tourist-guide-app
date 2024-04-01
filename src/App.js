@@ -28,6 +28,7 @@ const filterItems= (category)=>{
          <div className='underline'></div>
       </div>
       <Categories categories={categories} activeCategory={activeCategory} filterItems={filterItems} />
+      <Menu items={menuItems} />
      </section>
     </main>
   );
