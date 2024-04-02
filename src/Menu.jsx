@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Menu = () => {
+const Menu = ({menuItems}) => {
   return (
-    <div>
+    <div className='section-center'>
       
     </div>
   )
